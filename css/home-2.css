@@ -101,3 +101,170 @@ button {
 .header__nav-right img {
   display: none;
 }
+
+.main__ap-tab {
+  padding-top: 200px;
+}
+.main__ap-tab .main__ap-tab-content-card {
+  border-radius: 15px;
+  border: 3px solid #F4F4F4;
+  padding: 50px 20px;
+  transition: 0.5s;
+}
+.main__ap-tab .main__ap-tab-content-card img {
+  max-width: 270px;
+}
+.main__ap-tab .main__ap-tab-content-card-h4 {
+  font-size: 14px;
+  color: #242424;
+  font-weight: 600;
+  font-family: open sans;
+  padding-top: 10px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.main__ap-tab .main__ap-tab-content-card-p {
+  text-align: center;
+  font-weight: 600;
+  font-family: open sans;
+  font-size: 23px;
+  color: #BB2339;
+}
+.main__ap-tab .main__ap-tab-content-card:hover {
+  border: 3px solid #AAAAAA;
+  background-color: #F8F8F8;
+}
+.main__ap-tab .ap-tab {
+  width: 500px;
+  height: 650px;
+  background-color: #BB2339;
+  font-family: cera round pro;
+  border-radius: 20px;
+}
+.main__ap-tab .ap-tab-h1 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 40px;
+  color: #FFFFFF;
+  padding-top: 50px;
+  padding-left: 30px;
+}
+.main__ap-tab .ap-tab-list .ap-tab-item {
+  width: 300px;
+  padding-bottom: 35px;
+  padding-left: 30px;
+}
+.main__ap-tab .ap-tab-list .ap-tab-item .ap-tab-link {
+  font-size: 16px;
+  font-family: open sans;
+  font-weight: 600;
+  border: 1px solid #FFFFFF;
+  border-radius: 15px;
+  transition: 0.5s;
+  color: #FFFFFF;
+  padding: 10px 25px;
+}
+.main__ap-tab .ap-tab-list .ap-tab-item .ap-tab-link:hover {
+  background-color: #FFFFFF;
+  color: #BB2339;
+}
+.main__ap-tab .ap-tab-content.active-tab {
+  width: 25%;
+  justify-content: start;
+  margin-left: 615px;
+  display: flex;
+  margin-top: 70px;
+  margin-top: -550px;
+  margin-bottom: 120px;
+  display: grid !important;
+  grid-column-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 30px;
+}
+
+.main__gallery {
+  background-color: #F4F4F4;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.main__gallery-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+}
+.main__gallery-wrapper-left {
+  margin-left: 150px;
+  margin-right: 50px;
+  font-family: cera round pro;
+}
+.main__gallery-wrapper-left-h4 {
+  font-size: 23px;
+  font-weight: 700;
+  width: 300px;
+  color: #242424;
+}
+.main__gallery-wrapper-left-h2 {
+  width: 400px;
+  font-size: 48px;
+  font-weight: 500;
+  color: #242424;
+  margin-bottom: 24px;
+}
+.main__gallery-wrapper-left-p {
+  width: 500px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #AAAAAA;
+  margin-bottom: 20px;
+}
+.main__gallery-wrapper-left-btn {
+  margin-bottom: 110px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 42px;
+  border: 2px solid #BB2339;
+  border-radius: 20px;
+  width: 200px;
+  color: #242424;
+  transition: 0.5s;
+  background-color: #FFFFFF;
+}
+.main__gallery-wrapper-left-btn:hover {
+  background-color: #BB2339;
+  color: #FFFFFF;
+}
+.main__gallery-wrapper-right {
+  min-width: 1550px;
+}
+.main__gallery-wrapper-right .owl-carousel {
+  gap: 40px;
+}
+.main__gallery-wrapper-right .owl-carousel .main__gallery-wrapper-right-card {
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+}
+.main__gallery-wrapper-right .owl-carousel .main__gallery-wrapper-right-card .main__gallery-wrapper-right-card-text {
+  width: 300px;
+  height: 447px;
+  position: absolute;
+  bottom: -400px;
+  text-align: center;
+  transition: 1s;
+}
+.main__gallery-wrapper-right .owl-carousel .main__gallery-wrapper-right-card .main__gallery-wrapper-right-card-text img {
+  width: 50px;
+  margin-left: 129px;
+  transition: 0.5s;
+  margin-top: 190px;
+}
+.main__gallery-wrapper-right .owl-carousel .main__gallery-wrapper-right-card:hover .main__gallery-wrapper-right-card-text {
+  border: 2px solid rgba(36, 36, 36, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 15px;
+  bottom: 0;
+  background: linear-gradient(207.55deg, rgba(0, 0, 0, 0.75) 1.5%, rgba(0, 0, 0, 0.64) 98.62%);
+}
