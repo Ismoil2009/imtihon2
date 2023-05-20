@@ -2,3 +2,50 @@
 @use '../utils/variables' as var;
 @use '../base/typography';
 @use "../utils/mixin" as mixin;
+
+.main__about-us {
+    @media (max-width: 750px) {
+        text-align: center;
+        &-img {
+            width: 100%;
+        }
+        .out {
+            display: none;
+        }
+    }
+    min-height: 150vh;
+    padding-top: 180px;
+    padding-bottom: 70px;
+    &-h1 {
+        text-align: center;
+        font-family: cera round pro;
+        font-size: var.$font64;
+        font-weight: 500;
+        padding-bottom: 20px;
+    }
+    svg {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    &-p {
+        font-weight: 400;
+        text-align: center;
+        font-family: open sans;
+        font-size: var.$font20;
+        color: var.$color-black;
+        margin-bottom: 30px;
+    }
+    &-p2 {
+        font-weight: 400;
+        text-align: center;
+        font-family: open sans;
+        font-size: var.$font20;
+        color: var.$color-black;
+        margin-top: 30px;
+    }
+    .out {
+        margin-bottom: 70px;
+        margin-left: 700px;
+        margin-top: 50px;
+    }
+}

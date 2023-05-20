@@ -1,3 +1,51 @@
 @use '../utils/mixin' as mixin;
 @use '../utils/variables' as var;
 @use "../base/typography";
+
+.header {
+    font-family: open sans;
+    @media (max-width: 800px) {
+      .header__nav-right {
+        display: none;
+        img {
+          display: block;
+        }
+      }
+    }
+    padding-top: 30px;
+    background-color: var.$bg-red;
+    width: 100%;
+    min-height: 15vh;
+    font-family: "Roboto Condensed";
+    position: fixed;
+    z-index: 9999999;
+    transition: 0.1s linear;
+    &__nav {
+      @include mixin.df(space-between, center, row);
+      &-right {
+        font-family: open sans;
+        a {
+          color: var.$color-white;
+          margin-right: 30px;
+          font-size: var.$font16;
+          font-weight: 400;
+          text-decoration: none;
+          transition: 0.5s;
+        }
+        a:last-child {
+          border: 2px solid var.$color-white;
+          border-radius: 50px;
+          font-weight: 600;
+          padding: 12px 45px;
+          transition: 0.5s;
+        }
+        a:last-child:hover {
+          background-color: var.$color-white;
+          color: var.$color-red;
+        }
+        img {
+          display: none;
+        }
+      }
+    }
+  }
