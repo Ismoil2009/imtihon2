@@ -136,7 +136,7 @@ button {
 }
 .main__ap-tab .ap-tab {
   width: 500px;
-  height: 650px;
+  height: 680px;
   background-color: #BB2339;
   font-family: cera round pro;
   border-radius: 20px;
@@ -152,7 +152,6 @@ button {
 .main__ap-tab .ap-tab-list .ap-tab-item {
   width: 300px;
   padding-bottom: 35px;
-  padding-left: 30px;
 }
 .main__ap-tab .ap-tab-list .ap-tab-item .ap-tab-link {
   font-size: 16px;

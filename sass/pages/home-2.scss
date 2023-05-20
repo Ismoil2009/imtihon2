@@ -36,7 +36,7 @@
   }
   .ap-tab {
     width: 500px;
-    height: 650px;
+    height: 680px;
     background-color: var.$bg-red;
     font-family: cera round pro;
     border-radius: 20px;
@@ -53,7 +53,6 @@
     .ap-tab-item {
       width: 300px;
       padding-bottom: 35px;
-      padding-left: 30px;
       .ap-tab-link {
         font-size: var.$font16;
         font-family: open sans;
@@ -86,91 +85,91 @@
 }
 
 .main__gallery {
-    background-color: var.$bg-grey;
-    // padding-left: 250px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    // min-height: 80vh;
-    &-wrapper {
-      @include mixin.df(space-between, center, row);
-      overflow: hidden;
-      &-left {
-        margin-left: 150px;
-        margin-right: 50px;
-        font-family: cera round pro;
-        &-h4 {
-          font-size: var.$font23;
-          font-weight: 700;
-          width: 300px;
-          color: var.$color-black;
-        }
-        &-h2 {
-          width: 400px;
-          font-size: var.$font48;
-          font-weight: 500;
-          color: var.$color-black;
-          margin-bottom: 24px;
-        }
-        &-p {
-          width: 500px;
-          font-size: var.$font16;
-          font-weight: 400;
-          color: var.$color-gray;
-          margin-bottom: 20px;
-        }
-        &-btn {
-          margin-bottom: 110px;
-          font-size: var.$font16;
-          font-weight: 700;
-          padding: 15px 42px;
-          border: 2px solid var.$color-red;
-          border-radius: 20px;
-          width: 200px;
-          color: var.$color-black;
-          transition: 0.5s;
-          background-color: var.$color-white;
-          &:hover {
-            background-color: var.$bg-red;
-            color: var.$color-white;
-          }
+  background-color: var.$bg-grey;
+  // padding-left: 250px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  // min-height: 80vh;
+  &-wrapper {
+    @include mixin.df(space-between, center, row);
+    overflow: hidden;
+    &-left {
+      margin-left: 150px;
+      margin-right: 50px;
+      font-family: cera round pro;
+      &-h4 {
+        font-size: var.$font23;
+        font-weight: 700;
+        width: 300px;
+        color: var.$color-black;
+      }
+      &-h2 {
+        width: 400px;
+        font-size: var.$font48;
+        font-weight: 500;
+        color: var.$color-black;
+        margin-bottom: 24px;
+      }
+      &-p {
+        width: 500px;
+        font-size: var.$font16;
+        font-weight: 400;
+        color: var.$color-gray;
+        margin-bottom: 20px;
+      }
+      &-btn {
+        margin-bottom: 110px;
+        font-size: var.$font16;
+        font-weight: 700;
+        padding: 15px 42px;
+        border: 2px solid var.$color-red;
+        border-radius: 20px;
+        width: 200px;
+        color: var.$color-black;
+        transition: 0.5s;
+        background-color: var.$color-white;
+        &:hover {
+          background-color: var.$bg-red;
+          color: var.$color-white;
         }
       }
-      &-right {
-        // padding-left: 250px;
-        min-width: 1550px;
-        .owl-carousel {
-          gap: 40px;
-          .main__gallery-wrapper-right-card {
-            position: relative;
+    }
+    &-right {
+      // padding-left: 250px;
+      min-width: 1550px;
+      .owl-carousel {
+        gap: 40px;
+        .main__gallery-wrapper-right-card {
+          position: relative;
+          width: 300px;
+          overflow: hidden;
+          .main__gallery-wrapper-right-card-text {
             width: 300px;
-            overflow: hidden;
-            .main__gallery-wrapper-right-card-text {
-              width: 300px;
-              height: 447px;
-              position: absolute;
-              bottom: -400px;
-              text-align: center;
-              transition: 1s;
-              img {
-                width: 50px;
-                margin-left: 129px;
-                transition: 0.5s;
-                margin-top: 190px;
-              }
+            height: 447px;
+            position: absolute;
+            bottom: -400px;
+            text-align: center;
+            transition: 1s;
+            img {
+              width: 50px;
+              margin-left: 129px;
+              transition: 0.5s;
+              margin-top: 190px;
             }
-            &:hover .main__gallery-wrapper-right-card-text {
-              border: 2px solid rgba(36, 36, 36, 0.2);
-              backdrop-filter: blur(5px);
-              border-radius: 15px;
-              bottom: 0;
-              background: linear-gradient(
-                207.55deg,
-                rgba(0, 0, 0, 0.75) 1.5%,
-                rgba(0, 0, 0, 0.64) 98.62%
-              );
-            }
+          }
+          &:hover .main__gallery-wrapper-right-card-text {
+            border: 2px solid rgba(36, 36, 36, 0.2);
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            bottom: 0;
+            background: linear-gradient(
+              207.55deg,
+              rgba(0, 0, 0, 0.75) 1.5%,
+              rgba(0, 0, 0, 0.64) 98.62%
+            );
           }
         }
       }
     }
   }
+}
